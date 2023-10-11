@@ -1,0 +1,83 @@
+/* VARIABLE */
+:root {
+    --sidebar-bg-c:#061e34;
+    --generals-bg-c:#1d72e8;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+/* HEADER */
+.ms_head-container {
+    width: 100%;
+    height: 50px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-big {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .logo {
+        display: none;
+    }
+
+    .logo-big {
+        display: inline-block;
+    }
+}
+
+.ms_search-bg-color {
+    background-color: #eeeeee;
+}
+
+/* LEFT */
+.ms_left {
+    display: inline-block;
+    width: 50px;
+    height: calc(100vh - 50px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #061e34;
+}
+
+@media screen and (min-width: 992px){
+    .ms_left {
+        width: 100px;
+    }
+}
+
+/* RIGHT */
+.ms_right {
+    display: inline-block;
+    width: calc(100% - 50px);
+    height: calc(100vh - 50px);
+    overflow-y: auto;   /* CORREGGERE SCROLLBAR */
+}
+
+@media screen and (min-width: 992px){
+    .ms_right {
+        width: calc(100% - 100px);
+    }
+}
+
+/* GENERALS */
+.ms_general-debug {
+    background-color: var(--generals-bg-c);
+    /* debug */
+    min-height: 300px;
+}
+
+
+/* NEXT CLASS */
+.inner-container {
+    background-color: rgb(0, 179, 255);
+    /* debug */
+    min-height: 300px;    
+}
