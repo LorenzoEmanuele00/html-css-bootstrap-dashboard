@@ -77,23 +77,26 @@
 }
 
 /* GENERALS */
-.ms_general-debug {
+.ms_general-b-color {
     background-color: var(--generals-bg-c);
-    /* debug */
-    min-height: 300px;
 }
 
 .ms_top-color {
     background-color:#f0f0f0;
 }
 
-.test {
-    background-color: #ff8f00;
-}
-
-
 .ms_container-grid {
     width: 100%;
+}
+
+.ms_dimension {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+}
+
+.ms_circle-blue {
+    background-color: #104b9d;
+    
 }
 
 /* NEXT CLASS */
