@@ -3,6 +3,9 @@
     --sidebar-bg-c:#061e34;
     --generals-bg-c:#1d72e8;
     --drin:#ff8f00;
+    --green-tag:#1a8754;
+    --yellow-tag:#ffc008;
+    --red-tag:#dc3545;
 }
 
 
@@ -89,6 +92,10 @@
 }
 
 
+.ms_container-grid {
+    width: 100%;
+}
+
 /* NEXT CLASS */
 .inner-container {
     background-color: rgb(0, 179, 255);
@@ -96,6 +103,36 @@
     min-height: 300px;    
 }
 
+.ms_class-logo {
+    width: 20px;
+    scale: 1.5;
+}
+
+.ms_btn-dim {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+}
+
+.ms_tag-green {
+    color: white;
+    background-color: var(--green-tag);
+    width: 50px;
+}
+
+.ms_tag-yellow {
+    color: white;
+    background-color: var(--yellow-tag);
+    width: 70px;
+}
+
+.ms_tag-red {
+    color: white;
+    background-color: var(--red-tag);
+    width: 55px;
+}
+
+
+/* GRAPH */
 .graph {
     width: 100%;
 }
