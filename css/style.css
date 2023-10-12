@@ -2,11 +2,18 @@
 :root {
     --sidebar-bg-c:#061e34;
     --generals-bg-c:#1d72e8;
+    --drin:#ff8f00;
 }
 
+
+/* COMMAND */
 .wrapper {
     width: 100%;
     height: 100vh;
+}
+
+.ms_white-color {
+    color: white;
 }
 
 /* HEADER */
@@ -24,19 +31,14 @@
     display: none;
 }
 
-@media screen and (min-width: 992px) {
-    .logo {
-        display: none;
-    }
-
-    .logo-big {
-        display: inline-block;
-    }
+.ms_bell-color {
+    color: var(--drin);
 }
 
 .ms_search-bg-color {
     background-color: #eeeeee;
 }
+
 
 /* LEFT */
 .ms_left {
@@ -45,6 +47,10 @@
     height: calc(100vh - 50px);
     background-image: url(../img/sidebar-bg.png);
     background-color: #061e34;
+}
+
+.ms_text-size {
+    font-size: 1rem;
 }
 
 @media screen and (min-width: 992px){
@@ -68,10 +74,21 @@
 }
 
 /* GENERALS */
+.ms_cont {
+    width: 100%;
+}
 .ms_general-debug {
     background-color: var(--generals-bg-c);
     /* debug */
     min-height: 300px;
+}
+
+.ms_top {
+    background-color:#f0f0f0;
+}
+
+.test {
+    background-color: #ff8f00;
 }
 
 
