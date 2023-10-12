@@ -26,8 +26,18 @@
                     <li class="ms-3 d-none d-lg-inline-block"><i class="fa-solid fa-list-ul"></i></li>
                     <li class="ms-3 d-none d-lg-inline-block"><i class="fa-solid fa-circle-question"></i></li>
                     <li class="ms-3 d-none d-lg-inline-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                    <li class="ms-3 me-3 ms_bell-color"><i class="fa-solid fa-bell"></i></li>
+                    <li class="ms-3 me-3">
+                        <div class="dropdown d-lg-inline-block">
+                            <button class="fa-solid fa-bell ms_bell-color border-0 bg-transparent" data-bs-toggle="dropdown"></button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
+                
             </header>
             <!-- /HEADER -->
 
@@ -53,23 +63,98 @@
                 <!-- RIGHT PART -->
                 <div class="ms_right">
                     <!-- GENERALS CLASS SECTION -->
-                    <section class="container-fluid ms_general-b-color  ms_white-color">
+                    <section class="mb-3 container-fluid ms_general-b-color  ms_white-color">
                         <div class="row">
                             <div class="col-12 col-sm-4 order-sm-2">
                                 <div class="mb-3 mt-3">
                                     <h3 class="d-inline-block">Nuovo studente</h3>
-                                    <button type="button" class="ms_dimension ms-1 d-inline-block bg-transparent ms_white-color border border-1 border-white rounded-2">+</button>
+                                    <!-- OFFCANVAS -->
+                                    <button type="button" class="ms_dimension ms-1 d-inline-block bg-transparent ms_white-color border border-1 border-white rounded-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">+</button>   
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-floating mb-2">
+                                                        <input type="text" class="form-control bb" id="floatingtext" placeholder="Nome">
+                                                        <label for="floatingtext">Nome</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-floating mb-2">
+                                                        <input type="text" class="form-control bb" id="floatingtext" placeholder="Cognome">
+                                                        <label for="floatingtext">cognome</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-floating mb-2">
+                                                        <input type="email" class="form-control bb" id="floatingInput" placeholder="name@example.com">
+                                                        <label for="floatingInput">indirizzo email</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-floating mb-2">
+                                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Password</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control bb" id="floatingtext" placeholder="Indirizzo">
+                                                <label for="floatingtext">Indirizzo</label>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-floating mb-2">
+                                                        <input type="text" class="form-control bb" id="floatingtext" placeholder="Città">
+                                                        <label for="floatingtext">Città</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-floating mb-2">
+                                                        <input type="number" class="form-control bb" id="floatingInput" placeholder="CAP">
+                                                        <label for="floatingInput">CAP</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="input-group mb-3">
+                                                        <label class="input-group-text" for="inputGroupSelect01">Stato</label>
+                                                        <select class="form-select " id="inputGroupSelect01">
+                                                            <option selected>Scegli...</option>
+                                                            <option value="1">Torino</option>
+                                                            <option value="2">Milano</option>
+                                                            <option value="3">Roma</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Punta per proseguire
+                                                </label>
+                                            </div>
+                                            <div class="mt-3">
+                                                <button type="button" class="btn btn-primary d-inline-block">Salva</button>
+                                                <button type="button" class="btn btn-warning d-inline-block">Svuota</button>
+                                            </div>
+                                        </div>   
+                                    </div> 
+                                    <!-- /OFFCANVAS -->
                                 </div>
                             </div>
                             <div class="col-12 col-sm-4">
                                 <div class="mt-3">
                                     <h2 class="d-inline-block">Boolean</h2>
-                                    <p class="d-inline-block">Piano blaze</p>
+                                    <p class="px-2 d-inline-block ms_circle-blue rounded-4">Piano blaze</p>
                                 </div>
                                 <div class="mb-3">
                                     <p class="px-2 d-inline-block ms_circle-blue rounded-4">3 app</p>
                                     <i class="d-inline-block fa-solid fa-angles-right"></i>
-                                    <p class="px-2 d-inline-block ms_circle-blue rounded-4">+</p>
+                                    <p class="px-2 d-inline-block d-lg-none ms_circle-blue rounded-4">+</p>
                                     <p class="px-2 d-none d-lg-inline-block ms_circle-blue rounded-4">Boolean mobile app</p>
                                     <p class="px-2 d-none d-lg-inline-block ms_circle-blue rounded-4">Boolean web app</p>
                                     <p class="px-2 d-none d-lg-inline-block ms_circle-blue rounded-4">Boolean blog app</p>
